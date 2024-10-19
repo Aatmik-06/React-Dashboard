@@ -57,15 +57,24 @@ aside{
     padding: 20px;
     margin-right: 40px;
     img{
-        
         border-radius: 12px;
         height: 180px;
         width: 500px;
     }
 }
-// #homecontent-h2{
-//     @extend#homecontent-h1;
-// }
+#homecontent-h2{
+    display: flex;
+    margin-left: 20px;
+    img{
+        border-radius: 12px;
+        height: 180px;
+        width: 500px;
+    }
+    #review{
+        margin-left: 60px;
+        width: 550px;
+    }
+}
 #homecontent-h3{
     margin-top: 17px;
     img{

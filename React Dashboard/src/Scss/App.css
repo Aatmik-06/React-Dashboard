@@ -72,6 +72,20 @@ aside {
   width: 500px;
 }
 
+#homecontent-h2 {
+  display: flex;
+  margin-left: 20px;
+}
+#homecontent-h2 img {
+  border-radius: 12px;
+  height: 180px;
+  width: 500px;
+}
+#homecontent-h2 #review {
+  margin-left: 60px;
+  width: 550px;
+}
+
 #homecontent-h3 {
   margin-top: 17px;
 }

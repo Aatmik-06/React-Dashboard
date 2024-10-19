@@ -12,7 +12,7 @@ const HomeProducts=()=>{
                 <div id='homecontent-h1'><img src={user} alt="" /> <br />  <br /><img src={orders} alt="" /></div>
                 <div id='homecontent-h3'> <img src={sales} alt="" /> </div>
             </div>
-            <div id='homecontent-h2'><img src={products} alt="" /> <br /> <br /> <img src={review} alt="" /></div>
+            <div id='homecontent-h2'><img src={products} alt="" /> <br /> <br /> <img src={review} alt="" id='review' /></div>
                 
         </Container>
         
