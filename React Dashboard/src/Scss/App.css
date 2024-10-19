@@ -6,6 +6,8 @@
 
 body {
   background-image: url(src/images/Main-BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #logo {
@@ -59,38 +61,63 @@ aside {
 }
 
 #homecontainer {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 #homecontent-h1 {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   margin-right: 40px;
 }
-#homecontent-h1 img {
+
+#users, #reviews, #products, #orders {
+  margin-bottom: 20px;
+  color: white;
   border-radius: 12px;
   height: 180px;
   width: 500px;
+  padding: 15px 25px 0px 30px;
+  background-image: url(src/images/Users.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#users span, #reviews span, #products span, #orders span {
+  padding: 3px 5px 5px 3px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.533);
+}
+
+#orders {
+  background-image: url(src/images/Orders.png);
+}
+
+#products {
+  background-image: url(src/images/Products.png);
+  margin-right: 60px;
+}
+
+#reviews {
+  width: 550px;
+  background-image: url(src/images/Reviews.png);
 }
 
 #homecontent-h2 {
-  display: flex;
-  margin-left: 20px;
-}
-#homecontent-h2 img {
-  border-radius: 12px;
-  height: 180px;
-  width: 500px;
-}
-#homecontent-h2 #review {
-  margin-left: 60px;
-  width: 550px;
-}
-
-#homecontent-h3 {
   margin-top: 17px;
 }
-#homecontent-h3 img {
+#homecontent-h2 div {
+  color: white;
+  padding: 30px 50px 50px 50px;
+  background-image: url(src/images/Sales.png);
   height: 385px;
   width: 550px;
   border-radius: 12px;
+}
+#homecontent-h2 span {
+  margin-left: 1px;
+  color: rgb(8, 206, 8);
+  font-size: 20px;
+}
+
+#homecontent-h3 {
+  display: flex;
+  margin-left: 20px;
 }/*# sourceMappingURL=App.css.map */
