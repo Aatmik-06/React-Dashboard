@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(src/images/Main-BG.png);
+}
+#logo{
+    padding-left: 10px;
+    display: flex;
+}
+#sidebar{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.533);
+    width: fit-content;
+    height: 100%;
+    width: 264px;
+    padding: 0px 15px 0px 15px ;
+    flex-wrap: nowrap;
+    #sideitems{
+        padding: 15px 20px 15px 20px;
+        color: white;
+        transition: all 0.28s;
+        font-size: 21px;
+    }
+    #sideitems:hover{
+        color: rgb(129, 162, 229);
+        font-size: 22px;
+        // padding: 15px 20px 15px 20px;
+        background-color: rgb(19, 43, 83);
+        border-radius: 8px;
+    }
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+    padding-right: 20px;
+    background-color:rgba(0, 0, 0, 0.533);
+    overflow: hidden; 
+    top: 0; 
+}
+aside{
+    display: flex;
+    margin-top: 97px;
+}
+#outlet{
+    margin-left: 260px;
+}
+.homecontent{
+    display: flex;
+}
+#homecontainer{
+    margin-left: 40px;
+}
+#homecontent-h1{
+    padding: 20px;
+    margin-right: 40px;
+    img{
+        
+        border-radius: 12px;
+        height: 180px;
+        width: 500px;
+    }
+}
+// #homecontent-h2{
+//     @extend#homecontent-h1;
+// }
+#homecontent-h3{
+    margin-top: 17px;
+    img{
+        height: 385px;
+        width: 550px;
+         border-radius: 12px;
+    }
+
+}
