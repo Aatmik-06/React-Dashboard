@@ -1,12 +1,21 @@
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const HomeProducts = () => {
   return (
     <>
       <Container id="homecontainer">
+        <div id="head">
+            <h4>Products Dashboard &nbsp; 
+                <FontAwesomeIcon id="cheveron" icon={faChevronRight} />&nbsp;
+                    Dashboard&nbsp;<FontAwesomeIcon icon={faHouse} /> &nbsp; 
+                <FontAwesomeIcon id="cheveron" icon={faChevronRight} />&nbsp; 
+                Home 
+            </h4>
+        </div>
         <div className="homecontent">
-
           <div id="homecontent-h1">
             <div id="users">
                 <p>Total Users</p> 

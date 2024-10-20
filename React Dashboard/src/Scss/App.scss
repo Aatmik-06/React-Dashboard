@@ -47,16 +47,34 @@ aside{
     margin-top: 97px;
 }
 #outlet{
-    margin-left: 260px;
+    margin-left: 300px;
+}
+#head{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 11px;
+    // margin-left: 20px;
+    padding: 14px 0px 10px 25px;
+    width: 100%;
+    h4{
+        display: flex;
+        font-size: 18px;
+        color: white;
+    }
+}
+#head-upload{
+    width: 100%;
+    @extend#head;
+}
+#cheveron{
+    margin-top: 2px;
 }
 .homecontent{
     display: flex;
 }
-#homecontainer{
-    margin-left: 50px;
-}
+
 #homecontent-h1{
-    padding: 20px 20px 0px 20px ; 
+    padding: 20px 20px 0px 0px ; 
     margin-right: 40px;
 }
 #users{
@@ -96,9 +114,11 @@ aside{
         color: white;
         padding: 30px 50px 50px 50px ;
         background-image: url(src/images/Sales.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 385px;
         width: 550px;
-         border-radius: 12px;
+        border-radius: 12px;
     }
     span{
         margin-left: 1px;
@@ -108,5 +128,30 @@ aside{
 }
 #homecontent-h3{
     display: flex;
-    margin-left: 20px;
+    // margin-left: 20px;
+}
+#products-content{
+    width: 1200px;
+    margin-bottom: 100px;
+}
+#form-main{
+    margin-top: 50px;
+    border-radius: 10px;
+    h1{
+        color: white;
+        padding: 50px 0px 0px 100px;
+    }
+    background-color: rgb(30, 37, 52);
+    
+}
+#form-label{
+    border-radius: 12px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+#form{
+    border-radius: 12px;
+    padding: 50px 100px 50px 100px;
+
 }
