@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": "58e6",
+      "productdesc": "leather belt",
+      "category": "Both (men and women)",
+      "size": "onesize",
+      "brand": "woodland",
+      "price": "2000",
+      "stock": "50",
+      "orders": "25",
+      "sales": "$50000"
+    }
+  ]
+}

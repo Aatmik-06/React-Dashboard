@@ -30,7 +30,6 @@ const HomeProducts = () => {
                 <p><span>+30%</span> Last Month</p>
             </div>       
           </div>
-
           <div id="homecontent-h2">
             <div>
                 <h3>Total Sales</h3> <br />

@@ -8,6 +8,7 @@ body {
   background-image: url(src/images/Main-BG.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 #logo {
@@ -160,6 +161,7 @@ aside {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
 }
 
 #form {
