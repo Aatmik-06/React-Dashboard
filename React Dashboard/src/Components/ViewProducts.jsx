@@ -10,6 +10,7 @@ import { useState } from "react";
 import { message } from "antd";
 import axios from "axios";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import Table from 'react-bootstrap/Table';
 const ViewProducts=()=>{
     return(
         <>
@@ -25,6 +26,39 @@ const ViewProducts=()=>{
             <FontAwesomeIcon icon={faBookOpen} id="cheveron" /> &nbsp;
           </h4>
         </div>
+
+
+
+        <Table responsive striped bordered hover variant="dark">
+      <thead>
+        <tr>
+          <th>#</th>
+          {Array.from({ length: 12 }).map((_, index) => (
+            <th key={index}>Table heading</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          {Array.from({ length: 12 }).map((_, index) => (
+            <td key={index}>Table cell {index}</td>
+          ))}
+        </tr>
+        <tr>
+          <td>2</td>
+          {Array.from({ length: 12 }).map((_, index) => (
+            <td key={index}>Table cell {index}</td>
+          ))}
+        </tr>
+        <tr>
+          <td>3</td>
+          {Array.from({ length: 12 }).map((_, index) => (
+            <td key={index}>Table cell {index}</td>
+          ))}
+        </tr>
+      </tbody>
+    </Table>
         </Container>
         </>
     )

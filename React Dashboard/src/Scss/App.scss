@@ -12,6 +12,7 @@ body{
 #logo{
     padding-left: 10px;
     display: flex;
+    transition: all 0.2s;
 }
 #sidebar{
     position: fixed;
@@ -129,10 +130,10 @@ aside{
 }
 #homecontent-h3{
     display: flex;
+    // flex-wrap: wrap;
     // margin-left: 20px;
 }
 #products-content{
-    width: 1200px;
     margin-bottom: 100px;
 }
 #form-main{
@@ -145,6 +146,7 @@ aside{
     background-color: rgb(30, 37, 52);
     
 }
+
 #form-label{
     border-radius: 12px;
     display: grid;
@@ -156,4 +158,105 @@ aside{
     border-radius: 12px;
     padding: 50px 100px 50px 100px;
 
+}
+#hamburger{
+    display: none;
+    width: 0px;
+}
+#sidebar-ham{
+    @extend #sidebar;
+    margin-top: 93px;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+#button{
+    margin-top: 0px;
+    display: none;
+}
+@media screen  and (max-width:1450px) {
+    #outlet{
+     margin-top: 80px;
+     margin-left: 300px;
+ }
+
+}
+@media screen  and (max-width:1400px) {
+#hamburger{
+    display: inline;
+   }
+   #side-main{
+    display: none;
+   }
+   #button{
+    margin-top: 0px;
+    display: block;
+}
+   #outlet{
+    margin-top: 110px;
+    margin-left: 100px;
+}
+}
+
+@media screen  and (max-width:1199px) {
+#products{
+    width: 500px;
+    // margin-top: 20px;
+}
+#reviews{
+    width: 500px;
+}
+#homecontent-h2{
+    div{
+        width: 500px;
+    }   
+}
+#outlet{
+    margin-top: 110px;
+    margin-left: 10px;
+}
+
+}
+@media screen  and (max-width:1080px) {
+    #homecontent-h1{
+        margin-right: 0px;
+    }
+    #products{
+        margin-right: 20px;
+    }  
+}
+@media screen  and (max-width:1040px) {
+
+    .homecontent{
+        margin-left: 260px;
+        flex-wrap: wrap-reverse;
+    }
+    #homecontent-h3{
+        margin-left: 260px;
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen  and (max-width:769px) {
+.homecontent{
+    margin-left: 120px;
+    flex-wrap: wrap-reverse;
+}
+#homecontent-h3{
+    margin-left: 120px;
+    flex-wrap: wrap-reverse;
+}
+}
+@media screen  and (max-width:500px) {
+    .homecontent{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+#products{
+    margin-top: 20px;
+}
+#homecontent-h2{
+    margin-top: 0px;
+    width: 500px;
+}
+#reviews{
+    width: 500px;
+}
 }

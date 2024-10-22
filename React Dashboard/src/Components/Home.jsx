@@ -6,7 +6,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const HomeProducts = () => {
   return (
     <>
-      <Container id="homecontainer">
+      <Container id="homecontainer" fluid>
         <div id="head">
             <h4>Products Dashboard &nbsp; 
                 <FontAwesomeIcon id="cheveron" icon={faChevronRight} />&nbsp;
@@ -31,7 +31,7 @@ const HomeProducts = () => {
             </div>       
           </div>
           <div id="homecontent-h2">
-            <div>
+            <div id="homecontent-h2-main">
                 <h3>Total Sales</h3> <br />
                 <h1>$3,787,681.00 <span>40.63% <FontAwesomeIcon icon={faArrowTrendUp} /> </span></h1> <br /><br /> <br /><br /> <br /><br /><br />
                 <p>$3,578.90 in last month</p>
