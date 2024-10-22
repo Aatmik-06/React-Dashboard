@@ -14,6 +14,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 const Layout = ({ name, ...props }) => {
   const options = [{
     name: 'Enable both scrolling & backdrop',
@@ -29,22 +30,22 @@ const toggleShow = () => setShow((s) => !s);
     <>
       <Navbar data-bs-theme="dark" id="navbar">
      <Navbar.Brand as={Link} to="./home" id="logo">
-     <div>
-        <img src={logo} alt="logo" style={{height:"60px"}}/>
+     <div id="das-img">
+        <img src={logo} alt="logo" />
      </div>
-         <div>
+         <div id="das">
          <h2>Products <br /> <h5> Dashboard</h5> </h2>
          
          </div>
         </Navbar.Brand>   
-        <Button variant="primary" onClick={toggleShow} className="me-2" id="button">
-        {name} Click
+        <Button variant="" onClick={toggleShow} className="me-2" id="button">
+        {name} <FontAwesomeIcon icon={faBarsStaggered} />
       </Button>  
         <Container className="navbar">
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as : <a href="#login">Aatmik Kushwaha</a>
+            <Navbar.Text id="signedin">
+              Signed in as : <a href="#login"  >Aatmik Kushwaha</a>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>
@@ -77,14 +78,15 @@ const toggleShow = () => setShow((s) => !s);
       </aside>
 
 
-
        <div id="hamburger">
-      <Offcanvas style={{width:"300px", background: "none"}} show={show} onHide={handleClose} {...props} >
-
+      <Offcanvas style={{width:"260px", background: "none" ,border:"none"}} show={show} onHide={handleClose} {...props} >
+      <Offcanvas.Header closeButton data-bs-theme="dark" style={{marginTop:"20px"}}>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
         <aside id="sidebar-ham">
         <Nav defaultActiveKey="/home" className="flex-column" >
           <Nav.Link id="sideitems" as={Link} to="/home">
-          <FontAwesomeIcon icon={faHouse} />  Dashboard <Offcanvas.Header closeButton ></Offcanvas.Header> 
+          <FontAwesomeIcon icon={faHouse} />  Dashboard 
           </Nav.Link>
           <Nav.Link id="sideitems" as={Link} to="/viewproducts">
           <FontAwesomeIcon icon={faBookOpen} /> View Products

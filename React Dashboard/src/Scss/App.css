@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+#das-img img {
+  height: 60px;
+}
+
 #logo {
   padding-left: 10px;
   display: flex;
@@ -184,6 +188,10 @@ aside {
   display: none;
 }
 
+#table {
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 1450px) {
   #outlet {
     margin-top: 80px;
@@ -231,11 +239,11 @@ aside {
 }
 @media screen and (max-width: 1040px) {
   .homecontent {
-    margin-left: 260px;
+    margin-left: 250px;
     flex-wrap: wrap-reverse;
   }
   #homecontent-h3 {
-    margin-left: 260px;
+    margin-left: 250px;
     flex-wrap: wrap-reverse;
   }
 }
@@ -248,20 +256,76 @@ aside {
     margin-left: 120px;
     flex-wrap: wrap-reverse;
   }
+  #sidebar-ham {
+    margin-top: 91px;
+  }
 }
 @media screen and (max-width: 500px) {
+  #head, #head-upload {
+    margin-left: 8px;
+  }
+  #head h4, #head-upload h4 {
+    font-size: 15px;
+  }
+  #head-upload {
+    margin-left: 0px;
+  }
+  #head-upload h4 {
+    font-size: 13px;
+  }
+  #signedin {
+    font-size: 12px;
+  }
+  #das h2 {
+    font-size: 17px;
+  }
+  #das h2 h5 {
+    font-size: 14px;
+  }
+  #das-img img {
+    height: 40px;
+    width: 50px;
+  }
+  #sidebar, #sidebar-ham {
+    font-size: 10px;
+    width: 210px;
+  }
+  #sidebar #sideitems, #sidebar-ham #sideitems {
+    padding: 15px 20px 15px 20px;
+    color: white;
+    transition: all 0.28s;
+    font-size: 15px;
+  }
+  #sidebar #sideitems:hover, #sidebar-ham #sideitems:hover {
+    font-size: 16px;
+  }
+  #sidebar-ham {
+    margin-top: 70px;
+  }
+  #homecontent-h2 div {
+    width: 380px;
+  }
+  #users, #orders, #products, #reviews {
+    padding: 15px 25px 0px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 90%;
+    width: 380px;
+  }
   .homecontent {
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+    margin-left: 10px;
+  }
+  #homecontent-h3 {
+    margin-left: 10px;
+    width: 380px;
+    flex-wrap: wrap-reverse;
   }
   #products {
-    margin-top: 20px;
-  }
-  #homecontent-h2 {
     margin-top: 0px;
-    width: 500px;
-  }
-  #reviews {
-    width: 500px;
+    width: 380px;
+    margin-right: 0px;
   }
 }/*# sourceMappingURL=App.css.map */
