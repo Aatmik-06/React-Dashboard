@@ -160,7 +160,6 @@ aside{
 #form{
     border-radius: 12px;
     padding: 50px 100px 50px 100px;
-
 }
 #hamburger{
     display: none;
@@ -178,8 +177,6 @@ aside{
 #table{
     margin-top: 40px;
 }
-
-
 
 
 
@@ -260,6 +257,17 @@ aside{
 }
 }
 @media screen  and (max-width:500px) {
+    #form-label{
+        border-radius: 12px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr ;
+        flex-wrap: wrap;
+    }
+    #form{
+        border-radius: 12px;
+        padding: 25px 50px 25px 50px;
+    }
     #head{
         margin-left: 8px;
         h4{
