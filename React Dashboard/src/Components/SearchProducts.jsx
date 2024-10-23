@@ -1,20 +1,13 @@
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
-import Button from 'react-bootstrap/Button';
 import { useState ,useEffect} from "react";
-import { useNavigate } from "react-router-dom";
-import { message } from "antd";
 import axios from "axios";
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import Table from 'react-bootstrap/Table';
-import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -72,10 +65,11 @@ const SearchProducts=()=>{
 
 
         <h1>Search By Procuct Name</h1>
+        
         <FloatingLabel
         controlId="floatingInput"
         label="Search Here"
-        className="mb-3"
+        className="mb-3" 
         value={empname} onChange={handleChange}
       >
         <Form.Control type="text" placeholder="" />
