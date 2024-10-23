@@ -1,17 +1,6 @@
 {
   "Products": [
     {
-      "id": "93f0",
-      "productdesc": "Leather Belt",
-      "category": "Women",
-      "size": "Onesize",
-      "brand": "Woodland",
-      "price": "2000",
-      "stock": "500",
-      "orders": "100",
-      "sales": "$20000"
-    },
-    {
       "id": "b08d",
       "productdesc": "Plane Blue Full Sleeves Shirt",
       "category": "Men",
@@ -76,6 +65,17 @@
       "stock": "1500",
       "orders": "500",
       "sales": "$45000"
+    },
+    {
+      "id": "012a",
+      "productdesc": "Leather Belt",
+      "category": "Men",
+      "size": "M,L,XL",
+      "brand": "Woodland",
+      "price": "2000",
+      "stock": "500",
+      "orders": "100",
+      "sales": "$20000"
     }
   ]
 }
