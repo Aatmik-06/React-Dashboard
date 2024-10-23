@@ -7,20 +7,21 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
 import { useState ,useEffect} from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { message } from "antd";
 import axios from "axios";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import Table from 'react-bootstrap/Table';
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
+
+
 const ViewProducts=()=>{
-
-
   const [mydata, setMydata]=useState([]);
   const navigate= useNavigate();
   const loadData=()=>{
-     let api="http://localhost:3000/products";
+     let api="http://localhost:3000/Products";
      axios.get(api).then((res)=>{
          console.log(res.data);
          setMydata(res.data);
@@ -31,7 +32,7 @@ const ViewProducts=()=>{
   }, []);
  
  const myRecDel=(id)=>{
-     let api=`http://localhost:3000/products/${id}`
+     let api=`http://localhost:3000/Products/${id}`
      axios.delete(api).then((res)=>{
           message.error("Your record Succesfully deleted!!!");
          loadData();
@@ -54,8 +55,12 @@ const ViewProducts=()=>{
         <td> {key.orders} </td>
         <td> {key.sales} </td>
         <td>
-            <Link to="updateproducts" onClick={()=>{myEdit(key.id)}}><FontAwesomeIcon icon={faPenToSquare} /> </Link> &nbsp;&nbsp;
-            <Link to="updateproducts" onClick={()=>{myRecDel(key.id)}} style={{color:"red"}} ><FontAwesomeIcon icon={faTrash} /> </Link>
+            <a href="#" onClick={()=>{myEdit(key.id)}}>
+              <FontAwesomeIcon icon={faPenToSquare} />
+            </a> &nbsp;&nbsp;
+            <a href="#" onClick={()=>{myRecDel(key.id)}} style={{color:"red"}} >
+              <FontAwesomeIcon icon={faTrash} /> 
+            </a>
         </td>
 
       </tr>
@@ -63,10 +68,6 @@ const ViewProducts=()=>{
     </>
   )
 })
-
-
-
-
 
 
     return(
@@ -85,8 +86,6 @@ const ViewProducts=()=>{
         </div>
 
     
-  
-
 
     <Table responsive="sm" id="table" striped bordered hover variant="dark" >
         <thead>

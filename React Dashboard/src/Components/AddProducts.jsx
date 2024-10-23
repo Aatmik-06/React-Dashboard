@@ -19,7 +19,7 @@ const AddProducts = () => {
   };
 
   const handleSubmit = () => {
-    let api = "http://localhost:3000/products";
+    let api = "http://localhost:3000/Products";
     axios.post(api, input).then((res) => {
       console.log(res);
       message.success("Product Successfully Added!!!");

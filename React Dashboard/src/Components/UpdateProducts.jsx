@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faFilePen } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
@@ -10,11 +11,12 @@ import { useState ,useEffect } from "react";
 import { message } from "antd";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+
 const UpdateProducts=()=>{
     const {myid} =useParams();
-    const [mydata, setMydata]=useState({}); // mydata={}
+    const [mydata, setMydata]=useState({});
     const loadData=()=>{
-      let api=`http://localhost:3000/products/${myid}`;
+      let api=`http://localhost:3000/Products/${myid}`;
       axios.get(api).then((res)=>{
         console.log(res.data);
         setMydata(res.data);
@@ -31,7 +33,7 @@ const UpdateProducts=()=>{
     }
    const handleSubmit=(e)=>{ 
       e.preventDefault();
-    let api=`http://localhost:3000/products/${myid}`;
+    let api=`http://localhost:3000/Products/${myid}`;
     axios.put(api, mydata).then((res)=>{
         message.success("Data succesfully updated!!!");
         setMydata({
@@ -59,7 +61,7 @@ const UpdateProducts=()=>{
             <FontAwesomeIcon icon={faHouse} /> &nbsp;
             <FontAwesomeIcon id="cheveron" icon={faChevronRight} />
             &nbsp; Update Products&nbsp;
-            <FontAwesomeIcon icon={faBriefcase} id="cheveron" /> &nbsp;
+            <FontAwesomeIcon icon={faFilePen} id="cheveron" /> &nbsp;
           </h4>
         </div>
         <div id="form-main">
