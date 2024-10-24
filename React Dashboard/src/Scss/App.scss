@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(/src/Scss/images/Main-BG.PNG);
+    background-image: url(/src/Scss/images/Main-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -91,7 +91,7 @@ aside{
     height: 180px;
     width: 500px;
     padding: 15px 25px 0px 30px ;
-    background-image: url(src/images/Users.png);
+    background-image: url(/src/Scss/images/Users.png);
     background-repeat: no-repeat;
     background-size: cover;
     span{
@@ -102,24 +102,24 @@ aside{
 }
 #orders{
     @extend#users;
-    background-image: url(src/images/Orders.png)
+    background-image: url(/src/Scss/images/Orders.png)
 }   
 #products{
     @extend#users;
-    background-image: url(src/images/Products.png);
+    background-image: url(/src/Scss/images/Products.png);
     margin-right: 60px;
 }
 #reviews{
     @extend#users;
     width: 550px;
-    background-image: url(src/images/Reviews.png);
+    background-image: url(/src/Scss/images/Reviews.png);
 }
 #homecontent-h2{
     margin-top: 17px;
     div{
         color: white;
         padding: 30px 50px 50px 50px ;
-        background-image: url(src/images/Sales.png);
+        background-image: url(/src/Scss/images/Sales.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 385px;
