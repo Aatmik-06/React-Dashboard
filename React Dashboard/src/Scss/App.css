@@ -273,7 +273,7 @@ aside {
     padding: 25px 50px 25px 50px;
   }
   #head, #head-upload {
-    margin-left: 8px;
+    margin-left: 0px;
   }
   #head h4, #head-upload h4 {
     font-size: 15px;
@@ -327,10 +327,10 @@ aside {
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap-reverse;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   #homecontent-h3 {
-    margin-left: 10px;
+    margin-left: 0px;
     width: 380px;
     flex-wrap: wrap-reverse;
   }
