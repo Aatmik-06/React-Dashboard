@@ -13,7 +13,6 @@ import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 const Layout = ({ name, ...props }) => {
   const options = [{

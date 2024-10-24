@@ -261,12 +261,23 @@ aside {
   }
 }
 @media screen and (max-width: 500px) {
+  #head, #head-upload {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 11px;
+    padding: 14px 0px 10px 20px;
+    width: 100%;
+  }
   #form-label {
     border-radius: 12px;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
+  }
+  #form-main h1 {
+    color: white;
+    padding: 50px 0px 0px 70px;
   }
   #form {
     border-radius: 12px;
@@ -276,13 +287,13 @@ aside {
     margin-left: 0px;
   }
   #head h4, #head-upload h4 {
-    font-size: 15px;
+    font-size: 1px;
   }
   #head-upload {
     margin-left: 0px;
   }
   #head-upload h4 {
-    font-size: 13px;
+    font-size: 11px;
   }
   #signedin {
     font-size: 12px;
