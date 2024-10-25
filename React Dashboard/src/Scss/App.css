@@ -261,6 +261,10 @@ aside {
   }
 }
 @media screen and (max-width: 500px) {
+  #sidebar-ham {
+    margin-top: 93px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
   #head, #head-upload {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -325,14 +329,17 @@ aside {
     margin-top: 70px;
   }
   #homecontent-h2 div {
-    width: 380px;
+    padding: 30px 0px 0px 40px;
+    width: 350px;
+    height: 350px;
   }
   #users, #orders, #products, #reviews {
-    padding: 15px 25px 0px 30px;
+    padding: 15px 0px 0px 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 90%;
-    width: 380px;
+    width: 350px;
+    height: 160px;
   }
   .homecontent {
     display: flex;
@@ -342,12 +349,28 @@ aside {
   }
   #homecontent-h3 {
     margin-left: 0px;
-    width: 380px;
+    width: 350px;
     flex-wrap: wrap-reverse;
   }
   #products {
     margin-top: 0px;
     width: 380px;
     margin-right: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #head, #head-upload {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #head h4, #head-upload h4 {
+    font-size: 12px;
+  }
+  #head-upload {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #head-upload h4 {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=App.css.map */
