@@ -64,7 +64,7 @@ const SearchProducts=()=>{
         </div>
 
 
-        <h1>Search By Procuct Name</h1>
+        <h1 color="black">Search By Product Name</h1>
         
         <FloatingLabel
         controlId="floatingInput"
