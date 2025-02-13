@@ -19,7 +19,7 @@ const AddProducts = () => {
   };
 
   const handleSubmit = () => {
-    let api = "http://localhost:3000/Products";
+    let api = "https://react-dashboard-json.onrender.com/Products";
     axios.post(api, input).then((res) => {
       console.log(res);
       message.success("Product Successfully Added!!!");
